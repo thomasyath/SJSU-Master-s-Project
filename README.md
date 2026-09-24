@@ -1,2 +1,6 @@
 # SJSU-Master-s-Project
 Code repository for generated code for SJSU Master's Project
+
+This Master's project developed and implemented user fall detection to a robotic mobility walker. In normal operation, the user applied forces and torques applied to the user handle is detected by a 6 DOF force/torque sensor and user velocity intent is derived from this force/torque data. The fall detection system compares the input force/torque to empirically derived thresholds to determine if the user is in a fall scenario. In response, the motor velocity commands are desynced from the input forces/torques and a response wheelbase motion plan is implemented. The response motion is designed to align the walker heading with the direction of the XY force vector applied to the user handle during detected falls, and a reversing motion is engaged to push the user upright and place the walker in the ideal postural support position. The force vector magnitude determines the reversing velocity.
+
+The code was written for user in a ROS environment. Most code I have written for this project is in Python. This repository only contains code I have personally written for this project, and does not include the original code written by prior students for control and other features of the robotic walker.

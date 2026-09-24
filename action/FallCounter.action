@@ -1,0 +1,12 @@
+# Request
+float32 theta_traj
+float32 linear_mag
+---
+# Result
+float32 yaw_change
+---
+# Feedback
+float32[] wti
+float32 odom
+float32 input_twist
+float32 actual_twist

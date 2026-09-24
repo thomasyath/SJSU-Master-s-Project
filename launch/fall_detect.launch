@@ -1,0 +1,7 @@
+<launch>
+
+    <node pkg="control_system" type="wheel_odometry.py" name="Encoder_odom" output="log"> </node>
+    <node pkg="for_torque" type="velocity_publisher_with_fall_detect.py" name="velocity_publisher" output="screen"> </node>
+    <node pkg="for_torque" type="fall_counter_server.py" name="Fall_Counter_Server" output="screen"> </node>
+    
+</launch>
